@@ -1,0 +1,384 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #bbdaff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 200;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+/* CITY */
+
+
+/* HOUSE */
+
+.house-wrapper {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.house1 {
+  margin: 0 2px 0 10px;
+  width: 240px; /* 90*/
+  height: 160px; /*60*/
+  background-color: #eee;
+  position: relative;
+  border-bottom: 5px solid #ccc;
+}
+
+.house1a {
+  margin: 0 2px 0 -20px;
+  border-bottom-color: #eee;
+}
+
+.house1-roof {
+  width: 280px;
+  height: 0;
+  border-bottom: 55px solid #eee;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  position: absolute;
+  top: -25px;
+  left: -20px;
+}
+
+.house1a .house1-roof {
+  border-bottom-color: #ccc;
+}
+
+.house1-center {
+  width: 90px;
+  height: 177px;
+  top: -7px;
+  right: -40px;
+  background-color: #ccc;
+  transform: translate(35px, -15px);
+  position: relative;
+}
+
+.house1a .house1-center {
+  background-color: #eee;
+}
+
+.house1-center-roof {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  border-bottom: 25px solid #ccc;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+.house1a .house1-center-roof {
+  border-bottom-color: #eee;
+}
+
+.house1-center-roof:before {
+  content: "";
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  background-color: #eee;
+  transform: rotate(-25deg);
+  transform-origin: right;
+}
+
+.house1-center-roof:after {
+  content: "";
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  background-color: #eee;
+  transform: rotate(25deg);
+  transform-origin: left;
+}
+
+.house1a .house1-center-roof:before,
+.house1a .house1-center-roof:after {
+  background-color: #ccc;
+}
+
+.house1-window,
+.house2-window {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ccc;
+  position: absolute;
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.house1-window:before,
+.house2-main-window:before,
+.house2-window:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 46px;
+  background-color: #fff;
+  left: 20px;
+  top: 0px;
+}
+
+.house1-window:after,
+.house2-main-window:after,
+.house2-window:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 46px;
+  background-color: #fff;
+  right: -1px;
+  top: 20px;
+  transform: rotate(90deg);
+  transform-origin: top;
+}
+
+.house1-window:nth-child(1) {
+  left: 14px;
+  top: 35px;
+}
+
+.house1-window:nth-child(2) {
+  right: 14px;
+  top: 35px;
+}
+
+.house1-window:nth-child(3) {
+  left: 14px;
+  top: 95px;
+}
+
+.house1-window:nth-child(4) {
+  right: 14px;
+  top: 95px;
+}
+
+.house1-window.window-center {
+  height: 70px;
+  left: 20px;
+  top: 15px;
+  border: 4px solid #eee;
+}
+
+.house1a .house1-window.window-center {
+  border-color: #ccc;
+}
+
+.house1-window.window-center:before {
+  height: 64px;
+}
+
+.house1-window.window-center:after {
+  top: 30px;
+}
+
+.house1-center-door {
+  width: 45px;
+  height: 72px;
+  background-color: #eee;
+  position: absolute;
+  left: 22px;
+  bottom: -5px;
+}
+
+.house1a .house1-center-door {
+  background-color: #ccc;
+}
+
+/* TREE */
+
+.tree-wrapper {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 300px;
+}
+
+.tree {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-bottom: 25px solid #ccc;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 700;
+}
+
+.tree:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #bbb;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.tree:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid #aaa;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.base {
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  bottom: -32px;
+  left: -2.5px;
+  background-color: #555;
+}
+
+/* BUILDING */
+
+.building-wrapper {
+  display: inline-block;
+}
+
+.building1 {
+  z-index: 100;
+}
+
+.building {
+  margin-left: -8px;
+  width: 160px;
+  height: 240px;
+  background-color: #eee;
+  position: relative;
+  border-top: 10px solid #ccc;
+}
+
+.building-window {
+  width: 37.5px;
+  height: 62.5px;
+  border: 5px solid #ccc;
+  position: absolute;
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.building-window:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 25px;
+  background-color: #fff;
+  right: -1px;
+  top: 15px;
+  transform: rotate(90deg);
+  transform-origin: top;
+}
+
+.building-window:nth-child(1) {
+  left: 18px;
+  top: 20px;
+}
+
+.building-window:nth-child(2) {
+  right: 61px;
+  top: 20px;
+}
+
+.building-window:nth-child(3) {
+  right: 18px;
+  top: 20px;
+}
+
+.building-window:nth-child(4) {
+  left: 18px;
+  top: 95px;
+}
+
+.building-window:nth-child(5) {
+  right: 61px;
+  top: 95px;
+}
+
+.building-window:nth-child(6) {
+  right: 18px;
+  top: 95px;
+}
+
+.building-door {
+  width: 37px;
+  height: 60px;
+  background-color: #ccc;
+  position: absolute;
+  right: 22px;
+  bottom: 0;
+}
+
+/* BUILDING 2 */
+
+.building2 {
+  border-top: 10px solid #eee;
+  margin-left: -8px;
+  width: 128px;
+  height: 320px;
+  background-color: #ccc;
+}
+
+.building2 .building-window {
+  border: 3px solid #eee;
+}
+.building2 .building-window:nth-child(1) {
+  left: 16px;
+  top: 20px;
+}
+.building2 .building-window:nth-child(2) {
+  right: 16px;
+  top: 20px;
+}
+
+.building2 .building-window:nth-child(3) {
+  left: 16px;
+  top: 90px;
+}
+
+.building2 .building-window:nth-child(4) {
+  left: auto;
+  right: 16px;
+  top: 90px;
+}
+
+.building2 .building-window:nth-child(5) {
+  left: 16px;
+  right: auto;
+  top: 160px;
+}
+
+.building2 .building-window:nth-child(6) {
+  right: 16px;
+  top: 160px;
+}
+
+.building2 .building-door {
+  width: 40px;
+  height: 60px;
+  left: 30px;
+  background-color: #eee;
+}
