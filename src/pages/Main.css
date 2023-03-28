@@ -28,6 +28,7 @@ h1 {
 }
 
 .house1 {
+  margin-bottom: -160px;
   margin: 0 2px 0 10px;
   width: 240px; /* 90*/
   height: 160px; /*60*/

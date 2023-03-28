@@ -65,7 +65,7 @@ const LoginBtn = styled.div`
 const PageBackground = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #fed267;
+  background-color: #bbdaff;
 `;
 const MainDiv = styled.div`
   height: 100%;
@@ -87,6 +87,7 @@ const LoginDiv = styled.div`
   height: 351px;
   /* display: inline-block; */
   text-align: left;
+  margin-top: -80px;
   h2 {
     font-family: "Pretendard";
     font-style: normal;

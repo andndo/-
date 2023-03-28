@@ -32,14 +32,10 @@ function Main() {
               <MainNav>
                 <ul>
                   <li>
-                    <a className="signin" href="#0">
-                      로그인
-                    </a>
+                    <Link to="/login">로그인</Link>
                   </li>
                   <li>
-                    <a className="signup" href="#0">
-                      회원가입
-                    </a>
+                    <Link to="/signUp">회원가입</Link>
                   </li>
                 </ul>
               </MainNav>
@@ -76,6 +72,13 @@ function Main() {
                   </div>
                 </div>
               </div>
+              <MainNav>
+                <ul>
+                  <li>
+                    <Link to="/employment">취준생 게시판</Link>
+                  </li>
+                </ul>
+              </MainNav>
             </Home2>
             <div className="tree-wrapper">
               <div className="tree">
@@ -114,6 +117,13 @@ function Main() {
                   </div>
                 </div>
               </div>
+              <MainNav>
+                <ul>
+                  <li>
+                    <Link to="/workerBoard">재직자 게시판</Link>
+                  </li>
+                </ul>
+              </MainNav>
             </Home3>
           </Wrapper>
         </City_wrapper>
@@ -121,39 +131,6 @@ function Main() {
     </>
   );
 }
-const Home1 = styled.div`
-  position: relative;
-  top: 160px;
-`;
-const Home2 = styled.div`
-  position: relative;
-`;
-const Home3 = styled.div`
-  margin-left: 10px;
-  position: relative;
-`;
-const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-`;
-/* CITY */
-
-const City_wrapper = styled.div`
-  margin: 30px auto;
-  width: 1300px;
-`;
-
-const Wrapper = styled.div`
-  padding: 30px 15px;
-  text-align: left;
-  position: relative;
-  display: flex;
-  margin-left: 60px;
-  margin-top: 300px;
-`;
-
 const MainNav = styled.nav`
   width: 90%;
   max-width: 240px;
@@ -162,9 +139,10 @@ const MainNav = styled.nav`
   margin-left: 4px;
   cursor: pointer;
   ul {
+    z-index: -1;
     position: absolute;
     width: 100%;
-    top: 40%;
+    top: 300px;
     margin: 0;
     padding: 0;
     li {
@@ -190,10 +168,69 @@ const MainNav = styled.nav`
     line-height: 45px;
     color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
   }
+`;
+const Home1 = styled.div`
+  position: relative;
+  z-index: 10;
+  &:hover{
+    nav{
+      position:absolute;
+      margin-top: -700px;
+      li{
+        position: relative;
+      }
+    }
+  }
+  nav{
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+`;
+const Home2 = styled.div`
+  position: relative;
+  &:hover {
+    nav {
+      position: absolute;
+      margin-top: -700px;
+    }
+  }
+  nav{
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+`;
+const Home3 = styled.div`
+  margin-left: 10px;
+  position: relative;
+  &:hover {
+    nav {
+      position: absolute;
+      margin-top: -700px;
+    }
+  }
+  nav{
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+`;
+const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+`;
+/* CITY */
+
+const City_wrapper = styled.div`
+  margin: 30px auto;
+  width: 1300px;
+`;
+
+const Wrapper = styled.div`
+  padding: 30px 15px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  margin-left: 60px;
+  margin-top: 300px;
 `;
 
 /*.main-nav li:nth-child(2) a {
