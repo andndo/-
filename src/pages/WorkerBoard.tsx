@@ -3,6 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 function WorkerBoard() {
-  return <></>;
+  return <h1>WorkerBoard</h1>;
 }
 export default WorkerBoard;

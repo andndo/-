@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import LoginImg from "../assets/report.png"
 
 function LoginPage() {
   return (
@@ -35,7 +36,7 @@ function LoginPage() {
               <button>로그인</button>
             </LoginDiv>
             <ImgDiv>
-              <img src="" alt="" />
+              <img src={LoginImg} alt="" />
             </ImgDiv>
           </SubDiv>
         </MainDiv>
@@ -46,21 +47,6 @@ function LoginPage() {
 export default LoginPage;
 const InputContainer = styled.div`
   padding-bottom: 15px;
-`;
-const LoginBtn = styled.div`
-  padding-top: 20px;
-  button {
-    width: 320px;
-    height: 42px;
-    background-color: #242424;
-    color: #fff;
-    border-radius: 5px;
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-  }
 `;
 const PageBackground = styled.div`
   width: 100vw;
@@ -79,15 +65,14 @@ const MainDiv = styled.div`
 const SubDiv = styled.div`
   display: flex;
   /* justify-content: space-around; */
-  gap: 29vw;
-  margin-left: 300px;
+  gap: 23vw;
+  margin-left: 340px;
 `;
 const LoginDiv = styled.div`
   width: 320px;
   height: 351px;
   /* display: inline-block; */
   text-align: left;
-  margin-top: -80px;
   h2 {
     font-family: "Pretendard";
     font-style: normal;
@@ -97,13 +82,13 @@ const LoginDiv = styled.div`
     padding: 0 0 20px;
   }
   hr {
-    width: 67px;
-    height: 2px;
-    background-color: #fed267;
+    width: 87px;
+    height: 3px;
+    background-color: #96c3f9;
     border: 0;
   }
   a {
-    color: #fed267;
+    color: #96c3f9;
     font-family: "Pretendard";
     font-style: normal;
     font-weight: 600;
@@ -146,7 +131,6 @@ const InputDiv = styled.div`
 `;
 const ImgDiv = styled.div`
   img {
-    width: 388px;
-    height: 350px;
+    width: 600px;
   }
 `;

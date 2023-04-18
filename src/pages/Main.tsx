@@ -173,16 +173,17 @@ const MainNav = styled.nav`
 const Home1 = styled.div`
   position: relative;
   z-index: 10;
-  &:hover{
-    nav{
-      position:absolute;
+  &:hover {
+    nav {
+      position: absolute;
       margin-top: -700px;
-      li{
+      li {
         position: relative;
+        display: inline-flex;
       }
     }
   }
-  nav{
+  nav {
     -webkit-transition: all 0.3s ease-in-out;
   }
 `;
@@ -194,7 +195,7 @@ const Home2 = styled.div`
       margin-top: -700px;
     }
   }
-  nav{
+  nav {
     -webkit-transition: all 0.3s ease-in-out;
   }
 `;
@@ -204,10 +205,10 @@ const Home3 = styled.div`
   &:hover {
     nav {
       position: absolute;
-      margin-top: -700px;
+      top: 300px;
     }
   }
-  nav{
+  nav {
     -webkit-transition: all 0.3s ease-in-out;
   }
 `;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import { Link } from "react-router-dom";
+import Company from "../assets/company.png"
 
 function SignUpPage() {
   const personalData: string[] = ["닉네임", "아이디", "비밀번호"];
@@ -42,7 +43,7 @@ function SignUpPage() {
               </LoginBtn>
             </SignUpDiv>
             <ImgDiv>
-              <img src="" alt="" />
+              <img src={Company} alt="" />
             </ImgDiv>
           </SubDiv>
         </MainDiv>
@@ -53,9 +54,8 @@ function SignUpPage() {
 const ImgDiv = styled.div`
   display: flex;
   align-items: center;
-  img {
-    width: 480px;
-    height: 303.77px;
+  img { 
+    width:600px
   }
 `;
 const SelectDiv = styled.div`
@@ -136,7 +136,7 @@ const MainDiv = styled.div`
 
 const SubDiv = styled.div`
   display: flex;
-  gap: 29vw;
+  gap: 25vw;
   margin-left: 250px;
 `;
 const SignUpDiv = styled.div`
@@ -150,13 +150,13 @@ const SignUpDiv = styled.div`
     line-height: 36px;
   }
   hr {
-    width: 67px;
-    height: 2px;
-    background-color: #fed267;
+    width: 87px;
+    height: 3px;
+    background-color: #96c3f9;
     border: 0;
   }
   a {
-    color: #fed267;
+    color: #96c3f9;
     font-family: "Pretendard";
     font-style: normal;
     font-weight: 600;
